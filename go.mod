@@ -1,4 +1,4 @@
-module github/go-xuan/mongox
+module github.com/go-xuan/mongox
 
 go 1.18
 

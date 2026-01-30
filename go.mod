@@ -5,7 +5,6 @@ go 1.18
 require (
 	github.com/go-xuan/configx v1.26.2
 	github.com/go-xuan/nacosx v1.26.1
-	github.com/go-xuan/quanx v1.26.1
 	github.com/go-xuan/typex v1.26.0
 	github.com/go-xuan/utilx v1.26.0
 	github.com/sirupsen/logrus v1.9.4

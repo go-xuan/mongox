@@ -3,9 +3,8 @@ package mongox
 import (
 	"time"
 
-	"github.com/go-xuan/quanx/configx"
-	"github.com/go-xuan/quanx/constx"
-	"github.com/go-xuan/quanx/nacosx"
+	"github.com/go-xuan/configx"
+	"github.com/go-xuan/nacosx"
 	"github.com/go-xuan/utilx/errorx"
 	log "github.com/sirupsen/logrus"
 	"go.mongodb.org/mongo-driver/mongo/options"
@@ -91,8 +90,8 @@ func (c *Config) LogFields() map[string]interface{} {
 
 func (c *Config) Readers() []configx.Reader {
 	return []configx.Reader{
-		nacosx.NewReader(constx.MongoConfigName),
-		configx.NewFileReader(constx.MongoConfigName),
+		nacosx.NewReader("mongo.yaml"),
+		configx.NewFileReader("mongo.yaml"),
 	}
 }
 
@@ -122,8 +121,8 @@ func (s Configs) Valid() bool {
 
 func (s Configs) Readers() []configx.Reader {
 	return []configx.Reader{
-		nacosx.NewReader(constx.MongoConfigName),
-		configx.NewFileReader(constx.MongoConfigName),
+		nacosx.NewReader("mongo.yaml"),
+		configx.NewFileReader("mongo.yaml"),
 	}
 }
 

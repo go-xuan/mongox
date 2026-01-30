@@ -3,10 +3,12 @@ module github.com/go-xuan/mongox
 go 1.18
 
 require (
+	github.com/go-xuan/configx v1.26.2
+	github.com/go-xuan/nacosx v1.26.1
 	github.com/go-xuan/quanx v1.26.1
 	github.com/go-xuan/typex v1.26.0
 	github.com/go-xuan/utilx v1.26.0
-	github.com/sirupsen/logrus v1.9.3
+	github.com/sirupsen/logrus v1.9.4
 	go.mongodb.org/mongo-driver v1.16.1
 )
 
@@ -35,13 +37,10 @@ require (
 	go.uber.org/multierr v1.5.0 // indirect
 	go.uber.org/zap v1.15.0 // indirect
 	golang.org/x/crypto v0.22.0 // indirect
-	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sync v0.11.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	golang.org/x/text v0.22.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230525234030-28d5490b6b19 // indirect
-	google.golang.org/grpc v1.57.0 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect

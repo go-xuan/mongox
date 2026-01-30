@@ -1,7 +1,6 @@
 package mongox
 
 import (
-	"github.com/go-xuan/quanx/constx"
 	"github.com/go-xuan/typex"
 	"github.com/go-xuan/utilx/errorx"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -30,7 +29,7 @@ func AddClient(source string, client *Client) {
 	}
 	if !Initialized() {
 		pool = typex.NewStringEnum[*Client]()
-		pool.Add(constx.DefaultSource, client)
+		pool.Add("default", client)
 	}
 	pool.Add(source, client)
 }
@@ -42,7 +41,7 @@ func GetClient(source ...string) *Client {
 			return client
 		}
 	}
-	return Pool().Get(constx.DefaultSource)
+	return Pool().Get("default")
 }
 
 // GetConfig 获取配置

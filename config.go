@@ -7,8 +7,8 @@ import (
 	"github.com/go-xuan/nacosx"
 	"github.com/go-xuan/utilx/errorx"
 	log "github.com/sirupsen/logrus"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
+	"go.mongodb.org/mongo-driver/v2/mongo/options"
+	"go.mongodb.org/mongo-driver/v2/mongo/readpref"
 )
 
 type Config struct {

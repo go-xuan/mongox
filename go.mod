@@ -1,14 +1,14 @@
 module github.com/go-xuan/mongox
 
-go 1.18
+go 1.25
 
 require (
-	github.com/go-xuan/configx v1.26.5
-	github.com/go-xuan/nacosx v1.26.4
+	github.com/go-xuan/configx v1.26.7
+	github.com/go-xuan/nacosx v1.26.7
 	github.com/go-xuan/typex v1.26.0
-	github.com/go-xuan/utilx v1.26.2
+	github.com/go-xuan/utilx v1.26.3
 	github.com/sirupsen/logrus v1.9.4
-	go.mongodb.org/mongo-driver v1.16.1 // v1.16.1以上版本依赖golang.org/x/crypto的版本v0.26.0需要升级go 1.20
+	go.mongodb.org/mongo-driver/v2 v2.5.0
 )
 
 require (
@@ -17,28 +17,26 @@ require (
 	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/go-errors/errors v1.0.1 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/golang/snappy v0.0.4 // indirect
 	github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af // indirect
 	github.com/json-iterator/go v1.1.6 // indirect
-	github.com/klauspost/compress v1.13.6 // indirect
-	github.com/magiconair/properties v1.8.6 // indirect
+	github.com/klauspost/compress v1.17.6 // indirect
+	github.com/magiconair/properties v1.8.10 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect
-	github.com/montanaflynn/stats v0.7.1 // indirect
 	github.com/nacos-group/nacos-sdk-go v1.1.6 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
-	github.com/xdg-go/scram v1.1.2 // indirect
+	github.com/xdg-go/scram v1.2.0 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
-	github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d // indirect
+	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
 	go.uber.org/atomic v1.6.0 // indirect
 	go.uber.org/multierr v1.5.0 // indirect
 	go.uber.org/zap v1.15.0 // indirect
-	golang.org/x/crypto v0.22.0 // indirect
-	golang.org/x/sync v0.7.0 // indirect
-	golang.org/x/sys v0.19.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/crypto v0.33.0 // indirect
+	golang.org/x/sync v0.11.0 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/protobuf v1.26.0 // indirect
 	gopkg.in/ini.v1 v1.42.0 // indirect

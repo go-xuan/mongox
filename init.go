@@ -17,5 +17,5 @@ func Initialize() error {
 		return nil
 	}
 	logger.Warn("initialize failed")
-	return errorx.New("initialize mongox failed")
+	return errorx.New("failed to initialize mongox")
 }

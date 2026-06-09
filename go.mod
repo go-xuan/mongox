@@ -3,10 +3,10 @@ module github.com/go-xuan/mongox
 go 1.25
 
 require (
-	github.com/go-xuan/configx v1.26.9
-	github.com/go-xuan/nacosx v1.26.9
-	github.com/go-xuan/typex v1.26.3
-	github.com/go-xuan/utilx v1.26.5
+	github.com/go-xuan/configx v1.26.10
+	github.com/go-xuan/nacosx v1.26.10
+	github.com/go-xuan/typex v1.26.4
+	github.com/go-xuan/utilx v1.26.6
 	github.com/sirupsen/logrus v1.9.4
 	go.mongodb.org/mongo-driver/v2 v2.5.0
 )

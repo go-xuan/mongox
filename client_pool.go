@@ -1,6 +1,8 @@
 package mongox
 
 import (
+	"errors"
+
 	"github.com/go-xuan/typex"
 	"github.com/go-xuan/utilx/errorx"
 	"go.mongodb.org/mongo-driver/v2/mongo"
@@ -63,15 +65,14 @@ func GetDatabase(source ...string) *mongo.Database {
 	return nil
 }
 
-// Close 关闭所有数据库客户端
+// Close 关闭所有MongoDB客户端
 func Close() error {
-	var err error
+	var errs []error
 	Pool().Range(func(_ string, client *Client) bool {
-		if err = client.Close(); err != nil {
-			err = errorx.Wrap(err, "close mongo client failed")
-			return true
+		if err := client.Close(); err != nil {
+			errs = append(errs, errorx.Wrap(err, "close mongo client failed"))
 		}
-		return false
+		return true
 	})
-	return err
+	return errors.Join(errs...)
 }
